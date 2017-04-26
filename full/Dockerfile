@@ -1,4 +1,4 @@
-FROM michaeltigr/zebra-build:latest
+FROM michaeltigr/zebra-build:base
 
 LABEL maintainer "Michael Molchanov <mmolchanov@adyax.com>"
 
