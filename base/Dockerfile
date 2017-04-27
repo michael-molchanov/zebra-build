@@ -14,7 +14,7 @@ RUN apk add --update --no-cache bash && \
   rm -rf /var/lib/apt/lists/*
 
 # Install docman.
-RUN apk add --update --no-cache ruby \
+RUN apk add --update --no-cache ruby ruby-dev build-base libffi-dev \
   && rm -rf /var/cache/apk/* \
   && gem install --no-ri --no-rdoc json specific_install \
   && gem specific_install https://github.com/Adyax/docman.git develop
